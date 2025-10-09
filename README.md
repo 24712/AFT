@@ -4,7 +4,7 @@ Hello everyone this is the prototype of my future company's website
 <br/>
 Thank you for visiting, watching and supporting me.
 <br/>
-<Code>
+<pre><Code>
 <!-- "Code By Dev > I24712I ; github > https://github.com/24712 ; Enjoy^-^!!! ;" -->
 <!--
 
@@ -19,7 +19,7 @@ Thank you for visiting, watching and supporting me.
          =========               ===           ===                   ===         =========
  
 -->
-</Code>
+</Code></pre>
 <br/>
 ^-^
 
