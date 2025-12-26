@@ -1,90 +1,71 @@
-/* Reset and base styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  direction: rtl;
   font-family: 'Cairo', sans-serif;
-  background: #f9f9f9;
-  color: #222;
-  line-height: 1.6;
+  background: url('background_Images/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
   padding: 2rem;
+  direction: rtl;
+  color: #222;
 }
 
-/* Header */
-header {
+.basmala {
   text-align: center;
-  margin-bottom: 2rem;
-}
-
-header h1 {
   font-size: 2.5rem;
-  color: #007b5e;
-  margin-bottom: 0.5rem;
+  color: gold;
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
-header p {
-  font-size: 1.2rem;
-  color: #555;
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff00ba;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
 }
 
-/* Services list */
-ul.services {
+.services {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services ul {
   list-style: none;
   padding: 0;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
-ul.services li {
-  background: #fff;
-  border: 1px solid #ddd;
-  margin-bottom: 1rem;
-  padding: 1rem 1.5rem;
+.services li {
+  margin: 0.5rem 0;
+}
+
+.services button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #ffffffcc;
+  border: 1px solid #ccc;
   border-radius: 8px;
+  cursor: pointer;
   transition: background 0.3s ease;
 }
 
-ul.services li:hover {
-  background: #e6f7f1;
-  cursor: pointer;
+.services button:hover {
+  background-color: #e0f2f1;
 }
 
-/* Call to action */
-.cta {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.cta a {
+.more-services {
   display: inline-block;
-  background: #007b5e;
-  color: #fff;
+  margin-bottom: 1rem;
   padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  background-color: #007b5e;
+  color: white;
   text-decoration: none;
+  border-radius: 6px;
   font-weight: bold;
   transition: background 0.3s ease;
 }
 
-.cta a:hover {
-  background: #005f47;
-}
-
-/* Responsive tweaks */
-@media (max-width: 600px) {
-  body {
-    padding: 1rem;
-  }
-
-  header h1 {
-    font-size: 2rem;
-  }
-
-  ul.services li {
-    padding: 1rem;
-  }
+.more-services:hover {
+  background-color: #005f47;
 }
