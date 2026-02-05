@@ -1,0 +1,71 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  background: url('background_Images/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 2rem;
+  direction: rtl;
+  color: #222;
+}
+
+.basmala {
+  text-align: center;
+  font-size: 2.5rem;
+  color: gold;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff00ba;
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+}
+
+.services {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 0.5rem 0;
+}
+
+.services button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  background-color: #ffffffcc;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.services button:hover {
+  background-color: #e0f2f1;
+}
+
+.more-services {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #007b5e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.more-services:hover {
+  background-color: #005f47;
+}
