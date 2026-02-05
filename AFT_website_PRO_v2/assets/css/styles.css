@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f5f6fa;
+  direction: rtl;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(135deg, #001f3f, #003566);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.services {
+  background: #eaeef3;
+}
+
+.card {
+  background: white;
+  margin: 12px auto;
+  padding: 18px;
+  max-width: 500px;
+  border-radius: 12px;
+  font-size: 18px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.contact {
+  background: #fff;
+  font-size: 18px;
+}
+
+footer {
+  background: #ddd;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}

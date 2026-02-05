@@ -1,0 +1,52 @@
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f2f4f7;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  text-align: center;
+  color: #222;
+}
+
+header {
+  background: #003049;
+  color: #fff;
+  padding: 30px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+main {
+  padding: 30px 10px;
+}
+
+.services {
+  padding: 0;
+}
+
+.services li {
+  list-style: none;
+  background: #fff;
+  margin: 12px auto;
+  padding: 15px 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+footer {
+  background: #ddd;
+  padding: 15px;
+  font-size: 14px;
+  margin-top: 40px;
+}

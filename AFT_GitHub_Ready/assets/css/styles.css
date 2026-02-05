@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  direction: rtl;
+  background: #f4f6f9;
+  color: #222;
+  line-height: 1.8;
+}
+
+header {
+  background: #0a2540;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+header span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #0a2540;
+}
+
+.services, .why {
+  padding: 0;
+}
+
+.services li, .why li {
+  list-style: none;
+  background: #fff;
+  margin: 10px 0;
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+footer {
+  background: #e0e0e0;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
