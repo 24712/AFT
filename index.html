@@ -7,15 +7,15 @@
   <meta charset="UTF-8" />
   <title>AFT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="Logo/AFT.png" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="controls/control.js" defer></script>
+  <link rel="icon" type="image/svg+xml" href="Logo/AFT.svg" />
+  <link rel="stylesheet" href="Styles/Style.css" />
+  <script src="Controls/Control.js" defer></script>
 </head>
 
 <body lang="ar" dir="rtl">
 
   <!-- Header Embed -->
-  <embed src="basics/header.html" width="100%" height="150px" aria-label="رأس الصفحة" />
+  <iframe class="layout-frame layout-frame-header" src="basics/header.html" title="رأس الصفحة" loading="lazy"></iframe>
 
   <!-- Basmala -->
   <div class="basmala">
@@ -27,7 +27,7 @@
     <h2 class="section-title">خدماتنا</h2>
 
     <section class="services">
-      <a href="basics/services.html" class="more-services" target="_blank">اضغط هنا للمزيد من الخدمات</a>
+      <a href="basics/services.html" class="more-services">اضغط هنا للمزيد من الخدمات</a>
       <ul>
         <li><button type="button">🔋 بور بنك شمسي</button></li>
         <li><button type="button">🛠️ لحامات</button></li>
@@ -41,7 +41,7 @@
   </main>
 
   <!-- Footer Embed -->
-  <embed src="basics/footer.html" width="100%" height="150px" aria-label="تذييل الصفحة" />
+  <iframe class="layout-frame layout-frame-footer" src="basics/footer.html" title="تذييل الصفحة" loading="lazy"></iframe>
 
 </body>
 </html>
