@@ -6,7 +6,7 @@ body {
       rgba(15,23,42,.85),
       rgba(15,23,42,.85)
     ),
-    url("../background_Images/bg.webp");
+    url("../background_Images/bg.png");
 
   background-size: cover;
   background-position: center;
@@ -14,7 +14,7 @@ body {
   background-attachment: fixed;
 
   margin: 0;
-  font-family: Cairo, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 header, footer {
