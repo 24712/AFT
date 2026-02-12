@@ -1,18 +1,20 @@
-
 body {
-  font-family: 'Cairo', sans-serif;
+  min-height: 100vh;
 
-  background: 
+  background:
     linear-gradient(
-      rgba(15, 23, 42, 0.85),
-      rgba(15, 23, 42, 0.85)
+      rgba(15,23,42,.85),
+      rgba(15,23,42,.85)
     ),
-    url('../background_Images/bg.webp') center/cover no-repeat fixed;
+    url("../background_Images/bg.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   margin: 0;
-  padding: 0;
-  direction: rtl;
-  color: #f1f5f9;
+  font-family: Cairo, sans-serif;
 }
 
 header, footer {
