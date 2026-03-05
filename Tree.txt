@@ -1,0 +1,165 @@
+    AFT
+    │   index.html
+    │   Links.txt
+    │   README.md
+    │   Tree.txt
+    │
+    ├───AFT_FULL_ENTERPRISE_SITE
+    │   │   index.html
+    │   │   README.md
+    │   │
+    │   ├───i18n
+    │   │       ar.json
+    │   │       en.json
+    │   │
+    │   ├───js
+    │   │       i18n.js
+    │   │       main.js
+    │   │
+    │   ├───partials
+    │   │       footer.html
+    │   │       header.html
+    │   │
+    │   └───Styles
+    │           main.css
+    │
+    ├───AFT_FULL_ENTERPRISE_SITE_V2_DARK_LIGHT
+    │   │   index.html
+    │   │   README.md
+    │   │
+    │   ├───i18n
+    │   │       ar.json
+    │   │       en.json
+    │   │
+    │   ├───js
+    │   │       i18n.js
+    │   │       main.js
+    │   │       theme.js
+    │   │
+    │   ├───partials
+    │   │       footer.html
+    │   │       header.html
+    │   │
+    │   └───Styles
+    │           main.css
+    │
+    ├───AFT_GitHub_Ready
+    │   │   index.html
+    │   │
+    │   └───assets
+    │       └───css
+    │               styles.css
+    │
+    ├───AFT_SITE
+    │   │   index.html
+    │   │   script.js
+    │   │   style.css
+    │   │
+    │   └───img
+    │           pcb.jpg
+    │
+    ├───AFT_ULTIMATE_WEBSITE_FULL_SYSTEM
+    │   │   index.html
+    │   │   README.md
+    │   │
+    │   ├───assets
+    │   │   ├───img
+    │   │   │       logo.webp
+    │   │   │
+    │   │   └───svg
+    │   │           logo.svg
+    │   │
+    │   ├───dashboard
+    │   │       index.html
+    │   │
+    │   ├───i18n
+    │   │       ar.json
+    │   │       en.json
+    │   │
+    │   ├───js
+    │   │       lang.js
+    │   │       main.js
+    │   │       theme.js
+    │   │
+    │   ├───partials
+    │   │       footer.html
+    │   │       header.html
+    │   │
+    │   └───Styles
+    │           main.css
+    │
+    ├───AFT_website_PRO_v2
+    │   │   index.html
+    │   │
+    │   └───assets
+    │       └───css
+    │               styles.css
+    │
+    ├───AFT_website_ready
+    │   │   index.html
+    │   │
+    │   └───assets
+    │       └───css
+    │               styles.css
+    │
+    ├───background_Images
+    │       0bg.png
+    │       10bg.png
+    │       11bg.png
+    │       12bg.png
+    │       1bg.png
+    │       2bg.png
+    │       3bg.png
+    │       4bg.png
+    │       5bg.png
+    │       6bg.png
+    │       7bg.png
+    │       8bg.png
+    │       9bg.png
+    │       bg.png
+    │       bg.svg
+    │       bg.webp
+    │
+    ├───basics
+    │       About_Us.html
+    │       article.html
+    │       aside.html
+    │       details.html
+    │       footer.html
+    │       header.html
+    │       nav.html
+    │       section.html
+    │       services.html
+    │       sider.html
+    │       summary.html
+    │
+    ├───Controls
+    │       Control.js
+    │
+    ├───Languages
+    │       ar.json
+    │       en.json
+    │       es.json
+    │       fr.json
+    │       ru.json
+    │       Translator.js
+    │
+    ├───Logo
+    │       0AFT.png
+    │       1AFT.png
+    │       2AFT.png
+    │       3AFT.png
+    │       4AFT.png
+    │       5AFT.png
+    │       6AFT.png
+    │       AFT.png
+    │       AFT.svg
+    │       AFT.webp
+    │
+    ├───picture
+    │       Git-Hub-Logo.png
+    │       Git-Hub-Logo.svg
+    │       Git-Hub-Logo.webp
+    │
+    └───Styles
+            Style.css
