@@ -34,7 +34,7 @@ This is the prototype of my future company's website — AFT. It showcases creat
 ## 🌳 The_Tree | الهيكل
 
 ```html
-<embed src="Tree.txt"></embed>
+<embed src="Tree.txt"/>
 
 ---
 
