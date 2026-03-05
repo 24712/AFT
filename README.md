@@ -33,7 +33,7 @@ This is the prototype of my future company's website — AFT. It showcases creat
 
 ## 🌳 The_Tree | الهيكل
 
-<embed src="Tree.txt"/>
+<iframe src="Tree.txt"></iframe>
 
 ---
 
@@ -63,3 +63,4 @@ Thank you for visiting, watching, and supporting me. This is just the beginning 
          |||                     |||           |||                   |||         |||
          =========               ===           ===                   ===         =========
 -->
+```
