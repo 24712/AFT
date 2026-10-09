@@ -44,76 +44,118 @@ function toggleMenu() {
   </div>
 
 <!-- Services Section -->
-<main>
-  <h2 class="section-title">خدماتنا</h2>
+<main dir="rtl" class="services-container">
+  <h2 class="main-title">🛠️ خدماتنا الفنية والهندسية</h2>
+  <p class="section-subtitle">نقدم مجموعة شاملة من الخدمات التقنية، الهندسية، والصيانة الدقيقة</p>
 
-  <section class="services">
-    <a href="basics/services.html" class="more-services" target="_blank">اضغط هنا للمزيد من الخدمات</a>
+  <a href="basics/services.html" class="more-services-btn" target="_blank">اضغط هنا للمزيد من التفاصيل والخدمات 🔗</a>
 
-    <!-- 1. قسم الكمبيوتر والهاردوير -->
-    <div class="service-category">
-      <h3>💻 صيانة وتطوير الكمبيوتر واللابتوب (Hardware)</h3>
-      <ul>
-        <li><button type="button">💽 تركيب وتغيير ونقل بيانات الهاردات (HDD كمبيوتر ولابتوب / SSD / SSD M.2 / NVMe)</button></li>
-        <li><button type="button">🧠 توفير وترقية رامات كمبيوتر ولابتوب (DDR1 / DDR2 / DDR3 / DDR4 / DDR5 / DDR6)</button></li>
-        <li><button type="button">🎮 صيانة وتغيير كروت الشاشة (RTX / GTX / AMD Radeon)</button></li>
-        <li><button type="button">🛠️ تنظيف التراب، تنظيم الكابلات، وتغيير المعجون الحراري للمعالج وكارت الشاشة</button></li>
-        <li><button type="button">🖥️ معاملة وصيانة خاصة لكيسات الجيمينج والتجميعات العالية (Gaming PCs)</button></li>
-        <li><button type="button">🔧 صيانة مفصلات وشاشات اللابتوب وشحن البيوس (BIOS)</button></li>
+  <div class="services-grid">
+
+    <!-- 1. قسم صيانة الهاردوير والكمبيوتر -->
+    <div class="service-card">
+      <div class="card-header">
+        <span class="icon">💻</span>
+        <h3>صيانة وتطوير الكمبيوتر واللابتوب (Hardware)</h3>
+      </div>
+      <ul class="service-list">
+        <li><strong>وحدات التخزين:</strong> تركيب، صيانة، ونقل البيانات لجميع الأنواع (HDD كمبيوتر ولاب / SSD SATA / M.2 SATA / NVMe).</li>
+        <li><strong>الرامات:</strong> توفير وترقية رامات كمبيوتر ولابتوب لكل الأجيال (DDR1 / DDR2 / DDR3 / DDR4 / DDR5 / DDR6).</li>
+        <li><strong>كروت الشاشة:</strong> ترقية وصيانة فئات كروت الشاشة المختلفة (Nvidia RTX / GTX / AMD Radeon).</li>
+        <li><strong>التنظيف والتبريد:</strong> تنظيف التراب بالكامل، تنظيف المعالجات، وتغيير المعجون الحراري (Thermal Paste) للمعالج وكارت الشاشة.</li>
+        <li><strong>تجميعات الجيمينج:</strong> صيانة ومعاملة خاصة لكيسات الجيمينج والتجميعات العالية (High-End PCs).</li>
+        <li><strong>صيانة اللابتوب:</strong> تغيير وتصليح المفصلات المكسورة، الشاشات، وشحن البيوس (BIOS).</li>
       </ul>
     </div>
 
-    <!-- 2. قسم السوفت وير والدعم الفني -->
-    <div class="service-category">
-      <h3>🖥️ السوفت وير والدعم الفني</h3>
-      <ul>
-        <li><button type="button">🪟 تنزيل ويندوز وتثبيت التعريفات والبرامج الأساسية والاحترافية</button></li>
-        <li><button type="button">🎮 تنزيل وتحديث الألعاب + قسم خاص لطلب برامج أو ألعاب معينة</button></li>
-        <li><button type="button">🛠️ حل مشاكل الكمبيوتر والشتات برمجياً وعن بعد (Remote Support)</button></li>
-        <li><button type="button">📊 تصميم وإعداد شيتات الكنترول والإكسيل المعقدة</button></li>
-        <li><button type="button">🌐 توفير وإعداد سيرفرات RDP / RDS للرفع والتصفح السريع عن بعد</button></li>
-        <li><button type="button">💾 استرجاع البيانات والملفات المفقودة (Data Recovery)</button></li>
+    <!-- 2. قسم السوفت وير والدعم الفني واسكربتات البرمجة -->
+    <div class="service-card">
+      <div class="card-header">
+        <span class="icon">🖥️</span>
+        <h3>السوفت وير والدعم الفني المتقدم</h3>
+      </div>
+      <ul class="service-list">
+        <li><strong>أنظمة التشغيل:</strong> تثبيت نسخ الويندوز وتوزيعات اللينكس (Linux Services) وتثبيت كافة التعريفات والبرامج.</li>
+        <li><strong>التشغيل القديم (CD / DVD):</strong> تشغيل الألعاب والبرامج القديمة من أسطوانات CD/DVD وتحويلها لملفات EXE تعمل على الأنظمة الحديثة.</li>
+        <li><strong>الدعم البرمجي والشيتات:</strong> المساعدة في حل شيتات البرمجة للطلاب وتصميم شيتات الكنترول والإكسيل المعقدة.</li>
+        <li><strong>الدعم عن بعد:</strong> حل المشاكل البرمجية والـ Troubleshooting أونلاين عبر برامج التحكم عن بعد.</li>
+        <li><strong>سيرفرات الرفع:</strong> إعداد وتوفير سيرفرات RDP / RDS للتصفح والرفع السريع.</li>
+        <li><strong>الألعاب والبرامج:</strong> تنزيل وتحديث الألعاب مع إمكانية طلب ألعاب أو برامج مخصصة.</li>
       </ul>
     </div>
 
-    <!-- 3. قسم الشبكات والأمن السيبراني -->
-    <div class="service-category">
-      <h3>🌐 الشبكات والأمن السيبراني</h3>
-      <ul>
-        <li><button type="button">🛡️ تعديل إعدادات الراوتر، وضع فلتر حماية العائلة من المواقع الضارة، وتأمين الشبكة</button></li>
-        <li><button type="button">🔒 اختبار اختراق الواي فاي والشبكات وتقييم الثغرات (Pentesting)</button></li>
-        <li><button type="button">📡 إنشاء وتأسيس شبكات السايبر والمكاتب وتقسيم السرعات</button></li>
-        <li><button type="button">⏳ تطبيق واختبار شبكات Cisco CCNA على Packet Tracer (قريباً)</button></li>
+    <!-- 3. قسم استرجاع البيانات (مع التنويه وإخلاء المسؤولية) -->
+    <div class="service-card warning-card">
+      <div class="card-header">
+        <span class="icon">💾</span>
+        <h3>استرجاع البيانات المفقودة (Data Recovery)</h3>
+      </div>
+      <ul class="service-list">
+        <li>استرجاع الملفات الممسوحة من الهاردات (HDD/SSD) والكروت والفلاشات.</li>
+      </ul>
+      <div class="disclaimer-box">
+        ⚠️ <strong>تنويه هام وإخلاء مسؤولية:</strong> نسبة نجاح استرجاع البيانات تصل إلى <strong>90%</strong> حسب حالة القرص وسلامة القطاعات (Sectors)، ولا يمكن ضمان استرجاع 100% من البيانات في حالات التلف الفيزيائي الشديد.
+      </div>
+    </div>
+
+    <!-- 4. قسم الرسم الهندسي الميداني والأكاديمي -->
+    <div class="service-card">
+      <div class="card-header">
+        <span class="icon">📐</span>
+        <h3>الرسم الهندسي اليدوي واللوحات</h3>
+      </div>
+      <ul class="service-list">
+        <li><strong>الرسم اليدوي على الورق:</strong> استخدام مسطرة T والمثلثات (30-60 و 45) لرسم اللوحات الهندسية بدقة.</li>
+        <li><strong>استنتاج المساقط:</strong> استنتاج المسقط الثالث بمعلومية مسقطين (مثل Metric 30-30 على المساحة المحددة).</li>
+        <li><strong>رسم الأيزومترك (Isometric):</strong> رسم الأجسام والمجسمات وإسقاطاتها.</li>
+        <li><strong>الوصلات الميكانيكية:</strong> رسم المسمار والصامولة والوصلات الميكانيكية بالمعايير الهندسية.</li>
+        <li><strong>الدوائر الكهربية والإلكترونية:</strong> رسم الدوائر الكهربية والإلكترونية على الورق بالتخطيط القياسي.</li>
       </ul>
     </div>
 
-    <!-- 4. قسم الهندسة والـ PCB والطباعة 3D -->
-    <div class="service-category">
-      <h3>⚙️ الإلكترونيات والميكاترونكس</h3>
-      <ul>
-        <li><button type="button">🔌 تصميم وإنشاء بوردات الدوائر المطبوعة (PCB Design & Fabrication)</button></li>
-        <li><button type="button">🤖 طلب ومساعدة في تنفيذ مشاريع الهندسة والميكاترونكس ومشاريع التخرج</button></li>
-        <li><button type="button">📐 رسم وتصميم هندسي (2D / 3D CAD Drawing)</button></li>
-        <li><button type="button">🖨️ طباعة 3D وتجسيم النماذج</button></li>
-        <li><button type="button">🛠️ لحامات إلكترونية دقيقة وتجميع الدوائر</button></li>
+    <!-- 5. قسم الهندسة وتصميم الإلكترونيات والـ PCB -->
+    <div class="service-card">
+      <div class="card-header">
+        <span class="icon">⚙️</span>
+        <h3>الإلكترونيات والميكاترونكس والـ PCB</h3>
+      </div>
+      <ul class="service-list">
+        <li><strong>تصميم الـ PCB:</strong> تصميم وإنشاء بوردات الدوائر المطبوعة (Printed Circuit Boards).</li>
+        <li><strong>المشاريع الهندسية:</strong> مساعدة وتنفيذ مشاريع التخرج ومشاريع الميكاترونكس والأنظمة المدمجة.</li>
+        <li><strong>الطباعة واللحام:</strong> خدمات الطباعة ثلاثية الأبعاد (3D Printing) واللحامات الإلكترونية الدقيقة.</li>
       </ul>
     </div>
 
-    <!-- 5. قسم وسائل النقل والأجهزة الإلكترونية -->
-    <div class="service-category">
-      <h3>🚲 🏍️ 🚗 تعديل وسائل النقل والطاقة</h3>
-      <ul>
-        <li><button type="button">🚲 روق عجلتك بأنوار وكلاكس ودينامو وسماعات وشحن طاقة شمسية</button></li>
-        <li><button type="button">🏍️ روق مَكَنِتَكْ بأنوار وكلاكس ودينامو وسماعات وشحن طاقة شمسية</button></li>
-        <li><button type="button">🚗 روق عربيتك بأنوار وكلاكس ودينامو وسماعات وشحن طاقة شمسية</button></li>
-        <li><button type="button">🔌 جعل الأجهزة الإلكترونية تدعم الشحن</button></li>
-        <li><button type="button">🔋 بور بنك شمسي وتجميع بطاريات الليثيوم</button></li>
+    <!-- 6. قسم الشبكات والأمن السيبراني -->
+    <div class="service-card">
+      <div class="card-header">
+        <span class="icon">🌐</span>
+        <h3>الشبكات والأمن السيبراني</h3>
+      </div>
+      <ul class="service-list">
+        <li><strong>حماية العائلة:</strong> تعديل الراوتر وتفعيل الفلاتر لمنع المواقع الضارة/الإباحية وتأمين المنزل.</li>
+        <li><strong>اختبار الاختراق:</strong> فحص ثغرات الواي فاي وتقييم أمان الشبكة (Pentesting).</li>
+        <li><strong>شبكات السايبر:</strong> إنشاء وتأسيس شبكات السايبر والمكاتب وتقسيم السرعات.</li>
+        <li class="coming-soon">⏳ <strong>Cisco CCNA & Packet Tracer:</strong> تطبيق واختبار الشبكات برمجياً (قريباً).</li>
       </ul>
     </div>
 
-  </section>
+    <!-- 7. قسم تعديل وسائل النقل والطاقة -->
+    <div class="service-category-full">
+      <div class="card-header">
+        <span class="icon">🚲 🏍️ 🚗</span>
+        <h3>تعديل وسائل النقل وأنظمة الشحن</h3>
+      </div>
+      <div class="transport-grid">
+        <div class="trans-item">🚲 <strong>ترويق العجل:</strong> أنوار + كلاكس + دينامو + سماعات + شحن طاقة شمسية</div>
+        <div class="trans-item">🏍️ <strong>ترويق المكن:</strong> أنوار + كلاكس + دينامو + سماعات + شحن طاقة شمسية</div>
+        <div class="trans-item">🚗 <strong>ترويق السيارات:</strong> أنوار + كلاكس + دينامو + سماعات + شحن طاقة شمسية</div>
+        <div class="trans-item">🔌 <strong>تعديل الشحن:</strong> جعل الأجهزة الإلكترونية تدعم الشحن الذاتي والبور بنك الشمسي</div>
+      </div>
+    </div>
+
+  </div>
 </main>
-
 
 
   <!-- Footer Embed -->
