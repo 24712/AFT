@@ -267,3 +267,58 @@ padding:.85rem;
   font-size: 0.9rem;
 }
 
+/* Details & Summary Styling */
+details {
+  margin-top: 10px;
+  border-top: 1px dashed #e2e8f0;
+  padding-top: 8px;
+}
+
+summary {
+  font-size: 0.88rem;
+  font-weight: bold;
+  color: #2563eb;
+  cursor: pointer;
+  list-style: none; /* Disables default arrow */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.2s ease;
+}
+
+summary:hover {
+  color: #1d4ed8;
+}
+
+details[open] summary {
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.details-content {
+  font-size: 0.85rem;
+  color: #475569;
+  line-height: 1.5;
+  padding-right: 10px;
+  border-right: 2px solid #2563eb;
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Future / Coming Soon Card */
+.future-card {
+  background: #f0fdf4 !important;
+  border: 1px solid #bbf7d0 !important;
+}
+
+.future-list {
+  list-style: none;
+  padding: 0;
+}
+
+.future-list li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #166534;
+}
