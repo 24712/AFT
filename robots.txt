@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://24712.github.io/AFT/sitemap.xml

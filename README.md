@@ -1,66 +1,40 @@
-# 🌐 AFT — Prototype Website | موقع AFT التجريبي
+# AFT — Advanced Future Technology
 
-[![GitHub Pages](https://img.shields.io/badge/Live-Demo-blue?logo=github)](https://24712.github.io/AFT/)
-[![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-%231572B6.svg?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![Status](https://img.shields.io/badge/Status-Prototype-yellow)](#)
-[![Author](https://img.shields.io/badge/By-I24712I-blueviolet)](https://github.com/24712)
+**Official website:** https://24712.github.io/AFT/  
+**Repository:** https://github.com/24712/AFT
 
----
+AFT is a multidisciplinary technology initiative focused on engineering, electronics, digital manufacturing, robotics, energy systems and software development.
 
-## 👋 Welcome | مرحبًا
+## Current website
+The repository root is the GitHub Pages website. It uses semantic HTML, modular CSS and vanilla JavaScript.
 
-**EN:**  
-This is the prototype of my future company's website — AFT. It showcases creative services like solar-powered accessories, 3D printing, and more. Built with pure HTML, CSS, and a touch of JavaScript.
+Included features:
+- Responsive layout for mobile, tablet and desktop.
+- Arabic and English interface with RTL/LTR direction switching.
+- Dark and light themes with system preference detection.
+- Accessible navigation, reduced-motion support and keyboard skip link.
+- Capability overview, engineering workflow, project archive placeholder and AFT Lab section.
+- SEO metadata, Open Graph metadata and a custom 404 page.
 
-**AR:**  
-هذا هو النموذج الأولي لموقع شركتي المستقبلية — AFT. يعرض خدمات مبتكرة مثل ملحقات الطاقة الشمسية والطباعة ثلاثية الأبعاد والمزيد. تم بناؤه باستخدام HTML وCSS وبعض JavaScript.
+## Run locally
+Language files load through fetch, so use a local HTTP server instead of opening index.html directly.
 
-🔗 **Live Site | الموقع المباشر:**  
-[https://24712.github.io/AFT/](https://24712.github.io/AFT/)
+Run: python -m http.server 8000  
+Then open: http://localhost:8000
 
----
+## Project structure
+- index.html — website entry point
+- 404.html — not-found page
+- assets/css/main.css — design system and responsive styles
+- assets/js/ — theme, language and interface behavior
+- assets/i18n/ — Arabic and English dictionaries
+- Logo/ — existing AFT brand assets
+- basics/ and AFT_* — previous concepts retained during migration
 
-## 🛠️ Features | الميزات
+## Engineering notes
+- Contact actions currently link to GitHub. No fake form submission, account system, payment flow or database operation is presented as functional.
+- Service areas describe AFT's technical direction; they are not a claim that every service is currently commercially available.
+- Backend features should be introduced only with a real API, authentication, data storage, validation and deployment configuration.
 
-- 🔋 Solar Power Banks | بنوك طاقة شمسية
-- 🛠️ Welding Services | خدمات لحام
-- 🔌 Device Charging Mods | تعديل شحن الأجهزة
-- 🚲🚗 Custom Lighting & Audio for Bikes, Motorcycles, Cars | تخصيص الإضاءة والصوت
-- 🖨️ 3D Printing | طباعة ثلاثية الأبعاد
-
----
-
-## 🌳 The_Tree | الهيكل
-
-<object src="Tree.txt"></<object>
-
----
-
-## 🙏 Thanks | شكرًا
-
-**EN:**  
-Thank you for visiting, watching, and supporting me. This is just the beginning — more updates coming soon!
-
-**AR:**  
-شكرًا لزيارتك ومشاهدتك ودعمك. هذه مجرد البداية — المزيد من التحديثات قريبًا!
-
----
-
-## ✍️ Signature | التوقيع
-
-```html
-<!-- 
-  Code By Dev > I24712I ; GitHub > https://github.com/24712 ; Enjoy ^-^ !!!
-
-         =========            ======         =========            ======         =========
-               |||            ///|||              ///             ///|||               |||
-               |||           /// |||             ///             /// |||               |||
-               |||          ///  |||            ///             ///  |||               |||
-         =========         =========           ===             ===   |||         =========
-         |||                     |||           |||                   |||         |||
-         |||                     |||           |||                   |||         |||
-         |||                     |||           |||                   |||         |||
-         =========               ===           ===                   ===         =========
--->
-```
+## Status
+The website is evolving. Add portfolio items only after their implementation and test evidence are documented.
