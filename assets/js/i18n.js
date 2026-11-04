@@ -1,33 +1,6 @@
 (() => {
-  const root = document.documentElement;
-  const button = document.getElementById("languageToggle");
-  const fallbackLanguage = "ar";
-  const dictionaries = {};
-  async function loadLanguage(language) {
-    try {
-      if (!dictionaries[language]) {
-        const response = await fetch("assets/i18n/" + language + ".json");
-        if (!response.ok) throw new Error("Language file unavailable");
-        dictionaries[language] = await response.json();
-      }
-      const dictionary = dictionaries[language];
-      document.querySelectorAll("[data-i18n]").forEach((element) => {
-        const value = dictionary[element.dataset.i18n];
-        if (typeof value === "string") element.textContent = value;
-      });
-      root.lang = language;
-      root.dir = language === "ar" ? "rtl" : "ltr";
-      if (button) {
-        button.textContent = language === "ar" ? "EN" : "ع";
-        button.setAttribute("aria-label", language === "ar" ? "Switch to English" : "التبديل إلى العربية");
-      }
-      localStorage.setItem("aft-language", language);
-    } catch (error) {
-      console.error("AFT language loading error:", error);
-      if (language !== fallbackLanguage) loadLanguage(fallbackLanguage);
-    }
-  }
-  const preferred = localStorage.getItem("aft-language") || (navigator.language?.toLowerCase().startsWith("ar") ? "ar" : "en");
-  loadLanguage(preferred);
-  button?.addEventListener("click", () => loadLanguage(root.lang === "ar" ? "en" : "ar"));
+ const root=document.documentElement,select=document.getElementById("languageSelect"),supported=["ar","en","fr","es","it","ru","zh","ja"],cache={};
+ const get=()=>{try{return localStorage.getItem("aft-language")}catch{return null}},save=v=>{try{localStorage.setItem("aft-language",v)}catch{}};
+ async function load(lang){if(!supported.includes(lang))lang="en";try{if(!cache[lang]){const response=await fetch("assets/i18n/"+lang+".json");if(!response.ok)throw Error("Dictionary unavailable");cache[lang]=await response.json();}const d=cache[lang];document.querySelectorAll("[data-i18n]").forEach(el=>{const v=d[el.dataset.i18n];if(typeof v==="string")el.textContent=v;});document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{const v=d[el.dataset.i18nPlaceholder];if(typeof v==="string")el.placeholder=v;});root.lang=lang;root.dir=lang==="ar"?"rtl":"ltr";if(select)select.value=lang;save(lang);document.dispatchEvent(new CustomEvent("aft:languagechange",{detail:{language:lang}}));}catch(error){console.error("AFT language loading failed:",error);if(lang!=="en")load("en");}}
+ const initial=get()||(()=>{for(const l of(navigator.languages||[navigator.language||"en"])){const code=l.toLowerCase().split("-")[0];if(supported.includes(code))return code;}return"en";})();load(initial);select?.addEventListener("change",()=>load(select.value));
 })();
