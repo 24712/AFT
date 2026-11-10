@@ -107,3 +107,51 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}body{background:var(--bg);co
 @media(prefers-reduced-motion:reduce){
   .hero-visual .globe,.hero-visual .continent-one,.hero-visual .continent-two{animation:none!important}
 }
+
+
+/* FIX: make the AFT globe visibly rotate around its own axis */
+.hero-visual .globe{
+  animation:aft-globe-full-rotation 14s linear infinite !important;
+  transform-origin:50% 50%;
+  transform-style:preserve-3d;
+  backface-visibility:hidden;
+}
+.hero-visual .globe:after,
+.hero-visual .globe-meridian{
+  animation:aft-meridian-spin 7s linear infinite !important;
+}
+.hero-visual .globe-continent{
+  animation:none !important;
+}
+.hero-visual .continent-one{
+  animation:aft-continent-drift-one 14s linear infinite !important;
+}
+.hero-visual .continent-two{
+  animation:aft-continent-drift-two 14s linear infinite !important;
+}
+@keyframes aft-globe-full-rotation{
+  from{transform:rotateY(0deg)}
+  to{transform:rotateY(360deg)}
+}
+@keyframes aft-meridian-spin{
+  from{transform:rotateY(0deg)}
+  to{transform:rotateY(360deg)}
+}
+@keyframes aft-continent-drift-one{
+  0%{translate:-10px 0;opacity:.95}
+  45%{translate:38px 0;opacity:.75}
+  50%{translate:42px 0;opacity:.15}
+  55%{translate:38px 0;opacity:.75}
+  100%{translate:-10px 0;opacity:.95}
+}
+@keyframes aft-continent-drift-two{
+  0%{translate:12px 0;opacity:.9}
+  45%{translate:-38px 0;opacity:.7}
+  50%{translate:-42px 0;opacity:.15}
+  55%{translate:-38px 0;opacity:.7}
+  100%{translate:12px 0;opacity:.9}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-visual .globe,.hero-visual .globe:after,.hero-visual .globe-meridian,
+  .hero-visual .continent-one,.hero-visual .continent-two{animation:none!important}
+}
