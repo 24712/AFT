@@ -72,3 +72,38 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}body{background:var(--bg);co
 .service-card img{object-fit:cover}
 @media(max-width:680px){.globe{width:126px;height:126px}.visual-core{width:165px;height:165px}.visual-core .core-caption{font-size:.45rem}}
 @media(prefers-reduced-motion:reduce){.globe:after,.globe-meridian,.visual-core{animation:none!important}}
+
+
+/* AFT hero globe motion refinement */
+.hero-visual .globe{
+  transform-style:preserve-3d;
+  animation:aft-globe-turn 16s linear infinite, aft-globe-sheen 5s ease-in-out infinite;
+  will-change:transform,box-shadow;
+}
+.hero-visual .globe-continent{
+  will-change:transform;
+}
+.hero-visual .continent-one{animation:aft-land-one 12s ease-in-out infinite alternate}
+.hero-visual .continent-two{animation:aft-land-two 14s ease-in-out infinite alternate}
+.hero-visual .globe-meridian,
+.hero-visual .globe:after{animation-duration:12s}
+@keyframes aft-globe-turn{
+  0%{transform:rotateY(-12deg) rotateZ(-3deg)}
+  50%{transform:rotateY(12deg) rotateZ(3deg)}
+  100%{transform:rotateY(-12deg) rotateZ(-3deg)}
+}
+@keyframes aft-globe-sheen{
+  0%,100%{filter:brightness(.96) saturate(1)}
+  50%{filter:brightness(1.13) saturate(1.12)}
+}
+@keyframes aft-land-one{
+  from{translate:-5px 0;scale:.96}
+  to{translate:8px 2px;scale:1.04}
+}
+@keyframes aft-land-two{
+  from{translate:5px 0;scale:1}
+  to{translate:-7px -3px;scale:.94}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero-visual .globe,.hero-visual .continent-one,.hero-visual .continent-two{animation:none!important}
+}
